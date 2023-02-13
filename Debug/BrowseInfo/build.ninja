@@ -1,0 +1,163 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Adv_Calc.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Adv_Calc.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Basic_Calc.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Basic_Calc.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator_Base.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator_Base.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Delay.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Delay.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\DIO.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\DIO.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Keypad.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Keypad.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LCD.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LCD.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LEDs.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LEDs.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\main.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\main.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\startup_ewarm.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\startup_ewarm.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Stopwatch.c" -xcl_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.xcl" -macro_file "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Stopwatch.c" -D ewarm -D PART_TM4C123GH6PM -D TARGET_IS_TM4C123_RB1 -o "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -Ol --predef_macros "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.tmp"
+  rspfile_name = D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.xcl.rsp
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Adv_Calc.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Basic_Calc.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Calculator_Base.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Delay.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\DIO.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Keypad.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LCD.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\LEDs.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\main.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\startup_ewarm.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.pbi : INDEXER D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.xcl |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Stopwatch.c
+  flags = "-out=D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.pbi" -f "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.xcl"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbw : MAKEBROWSE D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbd
+  flags = "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbd" -output "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbw"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part0.pbi : PDBLINK D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.pbi |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbi
+  flags = -M "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part0.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Adv_Calc.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Basic_Calc.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbi"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part1.pbi : PDBLINK D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.pbi |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.pbi
+  flags = -M "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part1.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_Base.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Delay.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\DIO.pbi"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part2.pbi : PDBLINK D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.pbi |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.pbi
+  flags = -M "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part2.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Keypad.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LCD.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\LEDs.pbi"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part3.pbi : PDBLINK D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.pbi |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.pbi
+  flags = -M "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part3.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\main.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\startup_ewarm.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Stopwatch.pbi"
+
+build D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbd : PDBLINK D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part0.pbi |  $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part1.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part2.pbi $
+D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part3.pbi
+  flags = -M "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator.pbd" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part0.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part1.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part2.pbi" "D$:\S7\intro$ to$ embedded\Tiva-C-Applications-With-LCD-Keypad-master\Debug\BrowseInfo\Calculator_part3.pbi"
+

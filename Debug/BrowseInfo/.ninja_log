@@ -1,0 +1,93 @@
+# ninja log v5
+507	1389	6938654682193096	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+366	462	6932695531639033	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LCD.pbi	b58d9c8debc9c6c5
+23	148	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Keypad.xcl	748e3e819af982ec
+1	1045	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.xcl	74bb686874413863
+29	135	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.xcl	2c2df61315fc121c
+1	104	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.xcl	8784782fda69e784
+9	92	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.xcl	a50c8e2a612ffa49
+99	198	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_Base.xcl	e2acbd43acdc2cb5
+140	204	6936334443485889	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part1.pbi	acf54e0d102d25c
+154	249	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LCD.xcl	99d59268508a6b69
+380	1087	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.xcl	e8eacce2596d4f67
+1587	1676	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LEDs.xcl	5c3e87eb7767e997
+15	112	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Delay.xcl	2336794b9483bfc3
+398	1101	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Delay.xcl	ee3f5999b1c6e544
+142	240	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Stopwatch.xcl	c13f706c6740773b
+288	385	6938654672472969	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+4	47	6937076132638890	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/startup_ewarm.pbi	f7f7c3977dcdf35d
+129	220	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/main.xcl	26574e2fd7046637
+175	286	6936343695198742	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	e1d5edbda134d2e2
+291	1200	6936343704023194	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	90972f6986dd5382
+118	228	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LEDs.xcl	d5b09221e4256fc1
+4	190	6936334443329798	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.pbi	ee950b9fc8de35ce
+4	285	6938654671535710	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+1082	1634	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LCD.xcl	b85c8856b54db4c2
+8	211	6936334443485889	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	71801879ccd75368
+205	257	6932695529497322	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Delay.pbi	a8d94b897ff0bcf7
+10	199	6936334443485889	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Stopwatch.pbi	f176e6c994f30d6d
+1615	1720	6936855495731688	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/DIO.pbi	6d84296fdb9af14a
+2	113	6936334442639637	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbi	dcd3fab66b6f9d63
+123	182	6938654670442229	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part1.pbi	48adcc4195951c72
+1068	1577	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/main.xcl	ebc86f8c5942198b
+2	101	6936343693347934	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Keypad.pbi	ee7e654097bbc6c7
+6	134	6936334442795867	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_Base.pbi	7ad200111891c366
+329	415	6932695531156721	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LEDs.pbi	1f9f112ed4054bc5
+214	321	6936334444644492	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	457d73a831aa352
+5	119	6938654669817347	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_Base.pbi	9f35fdb7a2deff67
+12	193	6936334443329798	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/main.pbi	b952656e31451f35
+203	308	6936334444488276	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part3.pbi	efb0eb4833eea897
+105	169	6936343694048275	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part2.pbi	299f9cb22f4f434c
+20	123	6932695520000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/DIO.xcl	4f95ed252813b3bf
+255	335	6932695530353289	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/DIO.pbi	501be96fb7f3f6ad
+2	375	6936246300000000	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/startup_ewarm.xcl	323d52b00db7dc16
+130	205	6938654670755002	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part2.pbi	5acd7c655e794b
+1	40	6936246885149074	C:/Embedded/project13/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/startup_ewarm.pbi	294f9d19f50cd186
+1	35	6938059620017090	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Delay.pbi	5a49ac875877aa18
+1	177	6938654670442229	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.pbi	1423b2fe3a376cbb
+116	290	6938654671535710	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/main.pbi	bd34efc8746de4fb
+389	500	6938654673723148	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+387	1060	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.xcl	f1ba903ceb55ab0e
+392	1074	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_Base.xcl	ce7cd1c1259b32e
+1054	1592	6936855480000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Keypad.xcl	4fdd858432edb6ec
+404	1606	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/DIO.xcl	683557ba8b6569ed
+1095	1648	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Stopwatch.xcl	6fc117aaac3fb93a
+1601	1689	6936855490000000	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/startup_ewarm.xcl	f9dbdb8f9c15f56c
+7	112	6938654669817347	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Keypad.pbi	c9271d7fe86b3971
+9	125	6938654669817347	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbi	1179c285259f37e9
+2	151	6937944924900471	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LCD.pbi	17e0bd731cf27810
+1814	2296	6936855497571701	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/LEDs.pbi	1403d9289edfe46
+11	191	6938654670598758	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Stopwatch.pbi	b9f31b21fe897bc8
+295	377	6938654672472969	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part3.pbi	a3ddd032edfa0000
+1	156	6938655892582019	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+161	258	6938655893526106	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+265	372	6938655894775926	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+378	1235	6938655903096991	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+1	155	6938660587606858	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+159	247	6938660588700382	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+254	356	6938660589793508	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+362	1227	6938660598183157	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+1	155	6938665132869349	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+160	250	6938665133806618	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+257	361	6938665134899987	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+367	1230	6938665143214899	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+1	152	6938670718703015	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+156	246	6938670719796502	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+250	353	6938670720738405	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+361	1258	6938670729493286	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+1	158	6938692804924345	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+160	254	6938692805927531	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+259	367	6938692806995967	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+374	1258	6938692815717921	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+3	932	6938824587237636	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.pbi	1423b2fe3a376cbb
+940	1790	6938824595872287	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+1801	2256	6938824600535500	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+3	1986	6938824685605972	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+7	629	6938825507938524	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Basic_Calc.pbi	dbd7856790bb35a6
+647	1071	6938825512489742	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+4	295	6938825569076511	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+7	4212	6938825669738829	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
+3	387	6938826992754726	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Adv_Calc.pbi	1423b2fe3a376cbb
+398	606	6938826995010061	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator_part0.pbi	c76d1eaffed68eea
+625	898	6938826997921825	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbd	95412f811f402ecc
+4	1722	6938827077321854	D:/S7/intro to embedded/Tiva-C-Applications-With-LCD-Keypad-master/Debug/BrowseInfo/Calculator.pbw	6236f4513f6b820a
